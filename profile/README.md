@@ -1,6 +1,6 @@
 <!-- Q9Labs – Applied AI Research Lab -->
 <p align="center">
-  <img src="[https://api.q9labs.ai/public/logo.png](https://api.q9labs.ai/public/logo.png)" width="160" alt="Q9Labs Logo">
+  <img src="[Logo](https://api.q9labs.ai/public/logo.png)" width="160" alt="Q9Labs Logo">
 </p>
 
 <h1 align="center">🚀 Q9Labs — Applied AI Research Lab</h1>
@@ -20,17 +20,17 @@ We combine deep research with immediate application through our unique **RA Prot
 
 ## ⚙️ Our Core Products
 
-### 🔹 [AVA](https://q9labs.ai/ava) — AI Voice Agent
+### 🔹 [AVA](https://q9labs.ai/ai-voice-platform) — AI Voice Agent
 An AI-powered calling platform that replaces traditional call centers.  
 **Use cases:** Sales, lead qualification, customer support.  
 → 80% cheaper, scalable, and integrated with your CRM.
 
-### 🔹 [HIRM](https://q9labs.ai/hirm) — AI Hiring Manager
+### 🔹 [HIRM](https://q9labs.ai/ai-recruiter) — AI Hiring Manager
 Automates end-to-end recruitment — from job post to interview.  
 **Use cases:** Talent acquisition, HR automation.  
 → Reduces hiring time by 80%, screens and interviews instantly.
 
-### 🔹 [ATOR](https://q9labs.ai/ator) — AI Tutor
+### 🔹 [ATOR](https://q9labs.ai/ai-tutor) — AI Tutor
 An interactive AI learning companion that teaches, explains, and draws.  
 **Use cases:** Education, e-learning, personalized tutoring.  
 → Enables visual, conversational, and interactive learning.
@@ -56,7 +56,7 @@ This dual focus keeps Q9Labs ahead — innovating fast while solving today’s b
 <div align="center">
 
 **Backend:** Node.js • TypeScript • Python • Postgres • MongoDB • Redis  
-**Frontend:** React • Next.js • Tailwind • Expo  
+**Frontend:** Tanstack (web) • Expo (mobile)
 **AI:** OpenAI • Deepgram • Whisper • Custom fine-tuned models  
 **Infra:** AWS • Docker • Terraform • Prometheus • Grafana  
 
@@ -68,14 +68,6 @@ This dual focus keeps Q9Labs ahead — innovating fast while solving today’s b
 > “To build intelligent software that transforms how businesses and individuals operate.”
 
 We’re creating the bridge between **research and real-world AI**, helping companies move from manual inefficiency to **autonomous operation**.
-
----
-
-## 💼 Current Focus
-- Deploying **AVA** with real estate and service companies in the UAE.  
-- Preparing **HIRM** for production pilots.  
-- Advancing **ATOR** as a next-gen educational companion.  
-- Raising our **Seed Round (US$1M)** to accelerate proprietary AI model training.  
 
 ---
 
