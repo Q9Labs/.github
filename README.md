@@ -1,6 +1,6 @@
 <!-- Q9Labs – Applied AI Research Lab -->
 <p align="center">
-  <img src="[https://q9labs.ai/assets/logo-dark.png](https://api.q9labs.ai/public/logo.png)" width="160" alt="Q9Labs Logo">
+  <img src="[https://api.q9labs.ai/public/logo.png](https://api.q9labs.ai/public/logo.png)" width="160" alt="Q9Labs Logo">
 </p>
 
 <h1 align="center">🚀 Q9Labs — Applied AI Research Lab</h1>
