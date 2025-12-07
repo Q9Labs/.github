@@ -20,17 +20,17 @@ We combine deep research with immediate application through our unique **RA Prot
 
 ## ⚙️ Our Core Products
 
-### 🔹 [AVA](https://q9labs.ai/ai-voice-platform) — AI Voice Agent
+### 🔹 [Ava](https://q9labs.ai/ai-voice-platform) — AI Voice Agent
 An AI-powered calling platform that replaces traditional call centers.  
 **Use cases:** Sales, lead qualification, customer support.  
 → 80% cheaper, scalable, and integrated with your CRM.
 
-### 🔹 [HIRM](https://q9labs.ai/ai-recruiter) — AI Hiring Manager
+### 🔹 [Reqruiter](https://q9labs.ai/ai-recruiter) — AI Hiring Manager
 Automates end-to-end recruitment — from job post to interview.  
 **Use cases:** Talent acquisition, HR automation.  
 → Reduces hiring time by 80%, screens and interviews instantly.
 
-### 🔹 [ATOR](https://q9labs.ai/ai-tutor) — AI Tutor
+### 🔹 [Ator](https://q9labs.ai/ai-tutor) — AI Tutor
 An interactive AI learning companion that teaches, explains, and draws.  
 **Use cases:** Education, e-learning, personalized tutoring.  
 → Enables visual, conversational, and interactive learning.
