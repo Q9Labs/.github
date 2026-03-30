@@ -14,12 +14,6 @@ Q9Labs builds applied AI products for teams that want to automate operations, re
 - Hiring and workflow automation
 - AI systems for customer-facing and internal operations
 
-## Products
-
-- **Ava**: AI voice agent for calls, qualification, and support
-- **Hirm**: AI recruiter for screening and structured interviews
-- **Ator**: AI tutor for interactive learning
-
 ## Links
 
 - Website: [q9labs.ai](https://q9labs.ai)
