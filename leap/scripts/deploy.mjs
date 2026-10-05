@@ -168,7 +168,7 @@ async function preflight() {
   await assertFile(join(CAPSULE_DIR, ".env.lakebed.server"), "Lakebed server environment");
   await Promise.all([
     run("pnpm", ["--version"]),
-    run("npx", ["lakebed", "--version"], { cwd: CAPSULE_DIR }),
+    run("npx", ["lakebed", "help"], { cwd: CAPSULE_DIR }),
     run("rsync", ["--version"]),
     ssh(`test -d '${HOSTINGER.root}/public_html' && test -x /usr/bin/rsync`)
   ]);
