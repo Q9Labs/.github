@@ -30,7 +30,7 @@ function escapeHtml(value: string): string {
 }
 
 function isAieLead(lead: LeadRecord): boolean {
-  return lead.utmSource === "aie_2026" || /^https?:\/\/[^/]+\/aie(?:[/?#]|$)/.test(lead.pageUrl);
+  return lead.utmSource === "aie_2026" || /^(?:https?:\/\/[^/]+)?\/aie(?:[/?#]|$)/.test(lead.pageUrl);
 }
 
 /** Empty fields render as an em dash. */
