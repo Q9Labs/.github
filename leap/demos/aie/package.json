@@ -1,0 +1,14 @@
+{
+  "name": "q9-aie-demos",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "build": "node scripts/build.mjs",
+    "deploy": "wrangler deploy"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1",
+    "wrangler": "4.131.2"
+  }
+}

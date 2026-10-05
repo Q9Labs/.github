@@ -1,0 +1,12 @@
+{
+  "name": "q9-aie-demos",
+  "account_id": "5281943bd26d5bdcf4c3915606cd6bfb",
+  "compatibility_date": "2026-05-01",
+  "workers_dev": true,
+  "routes": [{ "pattern": "demos.q9labs.ai", "custom_domain": true }],
+  "build": { "command": "node scripts/build.mjs" },
+  "assets": {
+    "directory": "./public",
+    "not_found_handling": "single-page-application"
+  }
+}
