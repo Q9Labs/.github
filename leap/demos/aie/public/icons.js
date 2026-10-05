@@ -95,4 +95,14 @@ export const icons = {
     { tag: "path", d: "M15 10H19", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" },
     { tag: "path", d: "M15 14H19", strokeWidth: "1.5", strokeLinecap: "round", strokeLinejoin: "round" },
   ],
+  arrowRight: [
+    { tag: "path", d: "M18.5 12H5M13 18C13 18 19 13.581 19 12C19 10.419 13 6 13 6", strokeWidth: "1.5" },
+  ],
+  arrowLeft: [
+    { tag: "path", d: "M5.5 12H19M11 18C11 18 5 13.581 5 12C5 10.419 11 6 11 6", strokeWidth: "1.5" },
+  ],
+  external: [
+    { tag: "path", d: "M17 7L6 18", strokeWidth: "1.5" },
+    { tag: "path", d: "M11 6.13C11 6.13 16.634 5.655 17.454 6.475C18.274 7.295 17.799 12.93 17.799 12.93", strokeWidth: "1.5" },
+  ],
 };
