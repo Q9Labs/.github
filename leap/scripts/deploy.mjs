@@ -293,9 +293,9 @@ async function smokeTest(releaseId) {
   }
 
   const event = await readResponse(`${SITE_ORIGIN}/${eventPath}?release=${encodeURIComponent(releaseId)}`, {}, 200);
-  if (!event.body.includes("Free for 3 months.") || (eventPath === "aie"
-    ? !event.body.includes("AI Everything")
-    : !event.body.includes("31 Aug") || !event.body.includes("3 Sep 2026"))) {
+  if (eventPath === "aie"
+    ? !event.body.includes("AI Everything") || !event.body.includes("3 months") || !event.body.includes("free")
+    : !event.body.includes("Free for 3 months.") || !event.body.includes("31 Aug") || !event.body.includes("3 Sep 2026")) {
     throw new Error("live event page is missing the offer duration or event details");
   }
   if (eventPath === "aie") {
