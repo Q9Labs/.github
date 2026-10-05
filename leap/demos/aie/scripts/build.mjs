@@ -13,9 +13,10 @@ for(const file of files.sort()){
   if(file.endsWith('.js'))execFileSync(process.execPath,['--check',file]);
   hash.update(relative(root,file));hash.update(await readFile(file));
 }
+const template=await readFile(new URL('./sw-template.js',import.meta.url),'utf8');
+hash.update(template);
 const release={revision:hash.digest('hex').slice(0,16),builtAt:new Date().toISOString(),products:['ava','nura','edli','chalk','track','flow','mesa','terminal']};
 await writeFile(join(root,'release.json'),JSON.stringify(release,null,2)+'\n');
-const assets=files.map(file=>'/'+relative(root,file)).filter(path=>path!=='/_headers');
-const template=await readFile(new URL('./sw-template.js',import.meta.url),'utf8');
+const assets=['/',...files.map(file=>'/'+relative(root,file)).filter(path=>!['/_headers','/index.html'].includes(path))];
 await writeFile(join(root,'sw.js'),template.replace('__CACHE_VERSION__',release.revision).replace('__ASSETS__',JSON.stringify(assets)));
 console.log(`Validated ${files.length} static files. Release ${release.revision}`);
