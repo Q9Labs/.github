@@ -18,7 +18,7 @@ export function mount(root) {
     root.innerHTML=tabs([['call','Live call'],['campaign','Campaign']],view)+(view==='call'?`
       <div class="layout"><section class="panel">
       ${panelHeader('Front desk · sample call','مكالمة تجريبية',badge(handoff?'Human handoff':running?'Playing transcript':step===4?'Call complete':'Ready','green'))}
-      <div class="row">${avatar('MS','large')}<div><h3>Maha S.</h3><span class="muted">+966 5•• ••• 241 · English + العربية</span></div></div>
+      <div class="row">${avatar('MS','large')}<div><h3>Maha S.</h3><span class="muted">+971 50 ••• •241 · English + العربية</span></div></div>
       ${wave(running)}
       <div class="transcript" aria-live="polite">${step?turns.slice(0,step).map(([who,text,rtl])=>`<div class="turn ${who==='Ava'?'ai':''}"><span class="mini-label">${who}</span><div class="bubble ${rtl?'arabic':''}" ${rtl?'lang="ar" dir="rtl"':''}>${escapeHtml(text)}</div></div>`).join(''):empty('A bilingual conversation, one booking','Play the sample transcript to watch the conversation unfold. No audio is recorded or played.')}</div>
       <div class="actions">${step<4?button(running?'Pause':handoff?'Return to Ava':step?'Continue call':'Start sample call',running?'pause':'play'):button('Replay call','replay','class="quiet"')}${step<4&&running?button('Take over','handoff','class="quiet"'):''}${step<4?button('Next turn →','next','class="quiet"'):''}</div>

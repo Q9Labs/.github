@@ -2,8 +2,8 @@ import { avatar, badge, button, panelHeader, onAction, announce, escapeHtml, tab
 
 const candidates=[
   {name:'A. Rashed',initials:'AR',score:'8.6',role:'Field sales · Abu Dhabi',rank:'3',reasons:['Direct sector experience','Concrete account ownership','Fluent in Arabic and English'],answer:'A retail group, 40 branches — I ran the renewal myself.'},
-  {name:'S. Malik',initials:'SM',score:'8.2',role:'Field sales · Jeddah',rank:'8',reasons:['Strong relationship building','Six years in regional sales','Clear approach to objections'],answer:'I grew a distributor account from 12 locations to 28 in a year.'},
-  {name:'L. Kareem',initials:'LK',score:'7.9',role:'Field sales · Dammam',rank:'14',reasons:['Relevant retail portfolio','Structured follow-up process','Arabic-first customer communication'],answer:'I led the rollout for a local retail chain and owned weekly reviews.'}
+  {name:'S. Malik',initials:'SM',score:'8.2',role:'Field sales · Dubai',rank:'8',reasons:['Strong relationship building','Six years in regional sales','Clear approach to objections'],answer:'I grew a distributor account from 12 locations to 28 in a year.'},
+  {name:'L. Kareem',initials:'LK',score:'7.9',role:'Field sales · Sharjah',rank:'14',reasons:['Relevant retail portfolio','Structured follow-up process','Arabic-first customer communication'],answer:'I led the rollout for a local retail chain and owned weekly reviews.'}
 ];
 export function mount(root) {
   let selected=0, view='report', screened=false, evidence=false, shortlist=new Set(), scheduled=new Map(), slot='Tuesday · 10:00', interview=0;
