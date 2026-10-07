@@ -311,3 +311,40 @@ td small{display:block;color:var(--muted);font-size:.75rem}
 .walkthrough-link:hover{color:var(--ink);text-decoration-color:currentColor}
 @media(max-width:1100px){.product-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:760px){.product-grid{grid-template-columns:1fr}}
+
+/* stand liveliness: sound toggle, hero word swap, kiosk float, screen waveform, speech bubble, card spotlight */
+.header-actions{display:flex;align-items:center;gap:.6rem}
+.sound-toggle{padding:0 .95rem;gap:.45rem}
+.sound-toggle[data-state="on"] svg{color:#0098a8}
+.sound-toggle[data-state="blocked"]{border-color:#0098a8;color:var(--accent-soft-text)}
+.hero-word{display:inline-grid;padding-bottom:.08em}
+.hero-word>span{grid-area:1/1;opacity:0;transform:translateY(.22em);transition:opacity .35s ease,transform .6s cubic-bezier(.2,0,0,1)}
+.hero-word>span.is-leaving{transform:translateY(-.22em)}
+.hero-word>span.is-current{opacity:1;transform:none;transition-delay:.12s}
+.hero-art{position:relative;aspect-ratio:464/760}
+.hub-intro>.hero-art{display:block}
+.kiosk{position:absolute;inset:0;animation:kiosk-float 7s ease-in-out infinite alternate}
+.kiosk-img{display:block;width:100%;height:100%}
+.kiosk-wave{position:absolute;left:42.241%;top:21.842%;width:19.828%;height:21.053%}
+.kiosk-glow{position:absolute;left:39%;top:14%;width:25%;height:34%;background:radial-gradient(closest-side,rgba(6,203,222,.2),rgba(6,203,222,0));animation:screen-breathe 4.8s ease-in-out infinite alternate;pointer-events:none}
+.kiosk-bubble{display:none}
+@media(min-width:1200px){
+  .kiosk-bubble{display:flex;align-items:center;gap:.75rem;position:absolute;right:78%;bottom:87%;width:max-content;max-width:23rem;padding:.7rem 1rem .75rem .8rem;background:var(--bg);border:1px solid var(--border);border-radius:12px;opacity:0;transform:translateY(6px) scale(.97);transform-origin:100% 100%;transition:opacity .22s ease,transform .45s cubic-bezier(.2,0,0,1);pointer-events:none;z-index:1}
+  .kiosk-bubble::after{content:'';position:absolute;right:1.4rem;bottom:-6px;width:10px;height:10px;background:var(--bg);border-right:1px solid var(--border);border-bottom:1px solid var(--border);transform:rotate(45deg)}
+  .kiosk-bubble.is-visible{opacity:1;transform:none}
+  .bubble-icon{display:block;width:2.6rem;height:2.6rem;object-fit:contain;flex-shrink:0}
+  .bubble-icon[hidden]{display:none}
+  .kiosk-bubble .bubble-name{display:block;font-size:.78rem;font-weight:600;color:var(--accent-text);margin-bottom:.1rem}
+  .kiosk-bubble .bubble-line{margin:0;font-size:.95rem;font-weight:500;line-height:1.4;color:var(--ink)}
+  .kiosk-bubble .bubble-line.arabic{font-size:1.05rem}
+}
+.product-card{transition:border-color var(--t),transform .6s cubic-bezier(.2,0,0,1)}
+.product-card.is-spotlit{border-color:#0098a8;transform:translateY(-4px)}
+.product-grid .product-icon{animation:icon-bob 5s ease-in-out calc(var(--i,0) * -.6s) infinite alternate;transition:scale .6s cubic-bezier(.2,0,0,1)}
+.product-grid .is-spotlit .product-icon{scale:1.06;animation:icon-bob 5s ease-in-out calc(var(--i,0) * -.6s) infinite alternate,icon-hop 1.1s cubic-bezier(.3,0,.3,1) 2}
+@keyframes kiosk-float{from{transform:translateY(0)}to{transform:translateY(-6px)}}
+@keyframes screen-breathe{from{opacity:.35}to{opacity:1}}
+@keyframes icon-bob{from{transform:translateY(0)}to{transform:translateY(-3px)}}
+@keyframes icon-hop{0%,100%{translate:0 0}50%{translate:0 -7px}}
+@media(max-width:760px){.sound-toggle{display:none}}
+@media(prefers-reduced-motion:reduce){.product-card.is-spotlit{transform:none}.product-grid .is-spotlit .product-icon{scale:none}}

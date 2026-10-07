@@ -1,0 +1,103 @@
+{
+  "voice": {
+    "name": "Yasser",
+    "provider": "Cartesia",
+    "id": "0cb73340-95d3-48a6-a433-cdbfa366887a",
+    "model": "sonic-3.6-2026-08-27"
+  },
+  "lines": [
+    {
+      "key": "intro",
+      "name": "Welcome",
+      "lang": "ar",
+      "text": "أهلاً وسهلاً، حيّاكم الله",
+      "file": "intro-ar.mp3",
+      "seconds": 2.12
+    },
+    {
+      "key": "ava",
+      "name": "Ava",
+      "lang": "en",
+      "text": "Hello, I'm calling from Al Reem Clinic to confirm your appointment tomorrow at 10 am.",
+      "say": "Hello, I'm calling from Al Reem Clinic to confirm your appointment tomorrow at ten a.m.",
+      "file": "ava.mp3",
+      "seconds": 4.99
+    },
+    {
+      "key": "nura",
+      "name": "Nura",
+      "lang": "en",
+      "text": "Thanks for joining, Omar. Tell me about a project you're proud of.",
+      "file": "nura.mp3",
+      "seconds": 3.32
+    },
+    {
+      "key": "mesa",
+      "name": "Mesa",
+      "lang": "en",
+      "text": "Two chicken shawarma wraps and a karak. That's AED 34, ready in 10 minutes.",
+      "say": "Two chicken shawarma wraps and a karak. That's thirty-four dirhams, ready in ten minutes.",
+      "file": "mesa.mp3",
+      "seconds": 5.33
+    },
+    {
+      "key": "terminal",
+      "name": "Terminal",
+      "lang": "en",
+      "text": "You're checked in on EK 412 to Sydney. Gate B12, boarding at 9:40.",
+      "say": "You're checked in on E K four twelve to Sydney. Gate B twelve, boarding at nine forty.",
+      "file": "terminal.mp3",
+      "seconds": 5.56
+    },
+    {
+      "key": "track",
+      "name": "Track",
+      "lang": "en",
+      "text": "I turned this morning's call into three tasks. Shall I assign them to Layla?",
+      "file": "track.mp3",
+      "seconds": 4.99
+    },
+    {
+      "key": "chalk",
+      "name": "Chalk",
+      "lang": "en",
+      "text": "Noted: the launch moves to the 14th. I've added it to today's decisions.",
+      "say": "Noted. The launch moves to the fourteenth. I've added it to today's decisions.",
+      "file": "chalk.mp3",
+      "seconds": 4.6
+    },
+    {
+      "key": "flow",
+      "name": "Flow",
+      "lang": "en",
+      "text": "Thanks, Ahmed. I've filled in your Al Reem address. Does everything look right?",
+      "file": "flow.mp3",
+      "seconds": 4.05
+    },
+    {
+      "key": "edli",
+      "name": "Edli",
+      "lang": "en",
+      "text": "Good news: Sara was in class today and scored 18 out of 20 in maths.",
+      "say": "Good news. Sara was in class today and scored eighteen out of twenty in maths.",
+      "file": "edli.mp3",
+      "seconds": 4.44
+    },
+    {
+      "key": "moet",
+      "name": "MoET Services",
+      "lang": "en",
+      "text": "Your trade licence renewal is ready. I've filled it in from your Emirates ID.",
+      "file": "moet.mp3",
+      "seconds": 4.36
+    },
+    {
+      "key": "outro",
+      "name": "Q9 Labs",
+      "lang": "en",
+      "text": "That's AI for everyone. Pick a product below and try it yourself.",
+      "file": "outro.mp3",
+      "seconds": 3.55
+    }
+  ]
+}

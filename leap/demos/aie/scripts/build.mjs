@@ -17,6 +17,7 @@ const template=await readFile(new URL('./sw-template.js',import.meta.url),'utf8'
 hash.update(template);
 const release={revision:hash.digest('hex').slice(0,16),builtAt:new Date().toISOString(),products:['ava','nura','edli','chalk','track','flow','mesa','terminal']};
 await writeFile(join(root,'release.json'),JSON.stringify(release,null,2)+'\n');
-const assets=['/',...files.map(file=>'/'+relative(root,file)).filter(path=>!['/_headers','/index.html'].includes(path))];
+// Voice MP3s are cached by the service worker on first play rather than precached for every phone.
+const assets=['/',...files.map(file=>'/'+relative(root,file)).filter(path=>!['/_headers','/index.html'].includes(path)&&!(path.startsWith('/assets/voice/')&&path.endsWith('.mp3')))];
 await writeFile(join(root,'sw.js'),template.replace('__CACHE_VERSION__',release.revision).replace('__ASSETS__',JSON.stringify(assets)));
 console.log(`Validated ${files.length} static files. Release ${release.revision}`);
