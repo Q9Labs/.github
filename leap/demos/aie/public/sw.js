@@ -1,4 +1,4 @@
-const CACHE = 'q9-aie-d78c9e9676de8ee6';
+const CACHE = 'q9-aie-428ea2c7e9d5a2ee';
 const ASSETS = ["/","/app.js","/apple-touch-icon.png","/assets/art/aie-logo.webp","/assets/art/icon-ava.webp","/assets/art/icon-chalk.webp","/assets/art/icon-edli.webp","/assets/art/icon-flow.webp","/assets/art/icon-mesa.webp","/assets/art/icon-nura.webp","/assets/art/icon-terminal.webp","/assets/art/icon-track.webp","/assets/art/kiosk.webp","/assets/fonts/HostGrotesk-latin-ext.woff2","/assets/fonts/HostGrotesk-latin.woff2","/assets/fonts/IBMPlexSansArabic-SemiBold.woff2","/assets/logos/q9.svg","/assets/voice/voice-lines.json","/attract.js","/demos/ava.js","/demos/chalk.js","/demos/edli.js","/demos/flow.js","/demos/nura.js","/demos/track.js","/favicon.ico","/icons.js","/kiosk-screen.js","/og.jpg","/sound.js","/styles.css","/ui.js","/updates.js"];
 // Same-origin assets are network-first so new HTML never runs against stale JS or CSS. The cache
 // is the offline fallback, and a slow network falls back to it after NETWORK_TIMEOUT_MS.

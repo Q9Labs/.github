@@ -52,7 +52,13 @@ export function startAttract({ root, products }) {
     if (!line.text) return hideBubble();
     const fill = () => {
       bubbleName.textContent = line.name;
-      bubbleLine.textContent = line.text;
+      bubbleLine.classList.remove('is-speaking');
+      bubbleLine.replaceChildren(...line.text.split(/\s+/).flatMap((word, index) => {
+        const span = document.createElement('span');
+        span.textContent = word;
+        span.style.setProperty('--i', index);
+        return index ? [' ', span] : [span];
+      }));
       bubbleLine.lang = line.lang || 'en';
       bubbleLine.dir = line.lang === 'ar' ? 'rtl' : 'ltr';
       bubbleLine.classList.toggle('arabic', line.lang === 'ar');
@@ -68,6 +74,13 @@ export function startAttract({ root, products }) {
   function hideBubble() {
     clearTimeout(bubbleTimer);
     bubble.classList.remove('is-visible');
+  }
+
+  // Words darken in time with the voice, like live captions.
+  function speakWords(seconds) {
+    const count = bubbleLine.children.length || 1;
+    bubbleLine.style.setProperty('--step', `${Math.round((seconds * 1000) / count)}ms`);
+    bubbleLine.classList.add('is-speaking');
   }
 
   async function loadScript() {
@@ -100,9 +113,11 @@ export function startAttract({ root, products }) {
     }
     if (buffer && canSpeak()) {
       screen.speak('live');
+      speakWords(buffer.duration);
       await playVoice(buffer);
     } else if (line.text) {
       screen.speak('synthetic');
+      speakWords(line.seconds || 3.5);
       await session.wait((line.seconds || 3.5) * 1000);
     }
     if (session.cancelled) return;
