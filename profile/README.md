@@ -1,21 +1,32 @@
 <p align="center">
-  <img src="https://api.q9labs.ai/public/logo.png" width="144" alt="Q9Labs logo">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.q9labs.ai/public/logo.png">
+    <img src="https://raw.githubusercontent.com/Q9Labs/.github/main/profile/q9-logo-ink.svg" width="160" alt="Q9 Labs">
+  </picture>
 </p>
 
-# Q9Labs
+# Q9 Labs
 
-AI agents for real business problems.
+**AI is smart enough. It's just unemployed. We give it a job.**
 
-Q9Labs builds applied AI products for teams that want to automate operations, reduce manual work, and move faster.
+We build AI that does one complete job inside a business, like answering the phone or interviewing applicants, and we plug it into the systems the business already runs on. The AI does the work and a person approves what matters. We're a small team in Dubai, and our products are in production with paying customers.
 
-## What we work on
+## The jobs
 
-- Voice agents for sales and support
-- Hiring and workflow automation
-- AI systems for customer-facing and internal operations
+- **[Ava](https://q9labs.ai/products/ava)** takes the phone. It answers and makes calls, books appointments, and updates your CRM
+- **[Nura](https://q9labs.ai/products/nura)** takes the interview. Every applicant gets one, and you read the shortlist
+- **[Mesa](https://mesa.q9labs.ai)** takes the order, at the drive-through, on the phone, or at the table
+- **[Terminal](https://terminal.q9labs.ai)** takes the help desk at airports, in whatever language the traveller speaks
+- **[Track](https://track.q9labs.ai)** takes the project: chat, tasks, and an AI that only sees what you're allowed to see
+- **[Murmur](https://murmur.q9labs.ai)** takes the translation at live talks, so the room reads along in its own language
+- **[Flow](https://q9labs.ai/products/flow)** takes the form. People talk instead of typing, then check the record before it's sent
+- **[Edli](https://q9labs.ai/products/edli)** takes the school office: admin, academics, and parent messages in one platform
 
-## Links
+## Open source
 
-- Website: [q9labs.ai](https://q9labs.ai)
-- LinkedIn: [linkedin.com/company/q9labs](https://linkedin.com/company/q9labs)
-- Contact: [hello@q9labs.ai](mailto:hello@q9labs.ai)
+- **[Chalk](https://github.com/Q9Labs/chalk)**: Real-time collaboration SDK for calls and whiteboards, on React and React Native
+- **[q9stack](https://github.com/Q9Labs/q9stack)**: The TypeScript toolkit and quality gates every Q9 app ships on
+
+## Say hi
+
+[q9labs.ai](https://q9labs.ai) · [X](https://x.com/q9labsai) · [LinkedIn](https://linkedin.com/company/q9labs) · [hello@q9labs.ai](mailto:hello@q9labs.ai)
