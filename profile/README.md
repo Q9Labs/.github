@@ -1,13 +1,6 @@
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.q9labs.ai/public/logo.png">
-    <img src="https://raw.githubusercontent.com/Q9Labs/.github/main/profile/q9-logo-ink.svg" width="160" alt="Q9 Labs">
-  </picture>
-</p>
+<img src="./banner.png" alt="Q9 Labs. AI is smart enough. It's just unemployed. We give it a job." width="100%">
 
 # Q9 Labs
-
-**AI is smart enough. It's just unemployed. We give it a job.**
 
 We build AI that does one complete job inside a business, like answering the phone or interviewing applicants, and we plug it into the systems the business already runs on. The AI does the work and a person approves what matters. We're a small team in Dubai, and our products are in production with paying customers.
 
