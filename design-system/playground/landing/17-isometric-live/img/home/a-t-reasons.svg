@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-149.1 -14 298.2 197" width="298.2" height="197" fill="none" stroke="#0b0f12" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><title>A bar chart</title><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#f5f7f9"/><stop offset="1" stop-color="#e6ecf0"/></linearGradient></defs><style>
+.route{stroke:#06cbde;stroke-width:3.2}
+.pulse{stroke:#fff;stroke-width:1.7;stroke-dasharray:0.1 21;animation:flow 2.6s linear infinite}
+.pulse.slow{animation-duration:3.6s}
+@keyframes flow{to{stroke-dashoffset:-20.9}}
+.bob{animation:bob 5s ease-in-out infinite}
+.bob2{animation:bob 6.5s ease-in-out -2s infinite}
+@keyframes bob{50%{transform:translateY(-3.6px)}}
+.press{animation:press 4.5s ease-in-out infinite}
+@keyframes press{0%,55%,100%{transform:translateY(-14.3px)}68%,76%{transform:translateY(0)}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 4.5s ease-out infinite;opacity:0}
+@keyframes ping{0%,66%{opacity:0;transform:scale(.8)}70%{opacity:.9}100%{opacity:0;transform:scale(1.5)}}
+@media (prefers-reduced-motion:reduce){.pulse,.bob,.bob2,.press,.ping{animation:none}.press{transform:translateY(0)}}</style><polygon points="-135.1,91 0,169 0,156 -135.1,78" fill="#e3eaee"/><polygon points="135.1,91 0,169 0,156 135.1,78" fill="#d5dde2"/><polygon points="0,0 135.1,78 0,156 -135.1,78" fill="#eef3f5"/><polygon points="-69.8,58.5 -47.3,71.5 -47.3,45.5 -69.8,32.5" fill="#f5f7f9"/><polygon points="-11.3,50.7 -47.3,71.5 -47.3,45.5 -11.3,24.7" fill="#e6ecf0"/><polygon points="-33.8,11.7 -11.3,24.7 -47.3,45.5 -69.8,32.5" fill="#fff"/><polygon points="-36,78 -13.5,91 -13.5,41.6 -36,28.6" fill="#f5f7f9"/><polygon points="22.5,70.2 -13.5,91 -13.5,41.6 22.5,20.8" fill="#e6ecf0"/><polygon points="0,7.8 22.5,20.8 -13.5,41.6 -36,28.6" fill="#fff"/><polygon points="-2.3,97.5 20.3,110.5 20.3,37.7 -2.3,24.7" fill="#07b6c7"/><polygon points="56.3,89.7 20.3,110.5 20.3,37.7 56.3,16.9" fill="#07a3b3"/><polygon points="33.8,3.9 56.3,16.9 20.3,37.7 -2.3,24.7" fill="#06cbde"/></svg>

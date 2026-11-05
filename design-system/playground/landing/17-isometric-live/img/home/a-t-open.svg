@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-149.1 -40 298.2 223" width="298.2" height="223" fill="none" stroke="#0b0f12" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"><title>A cube marked with code brackets</title><defs><linearGradient id="cg" x1="0" x2="1"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#f5f7f9"/><stop offset="1" stop-color="#e6ecf0"/></linearGradient></defs><style>
+.route{stroke:#06cbde;stroke-width:3.2}
+.pulse{stroke:#fff;stroke-width:1.7;stroke-dasharray:0.1 21;animation:flow 2.6s linear infinite}
+.pulse.slow{animation-duration:3.6s}
+@keyframes flow{to{stroke-dashoffset:-20.9}}
+.bob{animation:bob 5s ease-in-out infinite}
+.bob2{animation:bob 6.5s ease-in-out -2s infinite}
+@keyframes bob{50%{transform:translateY(-3.6px)}}
+.press{animation:press 4.5s ease-in-out infinite}
+@keyframes press{0%,55%,100%{transform:translateY(-14.3px)}68%,76%{transform:translateY(0)}}
+.ping{transform-box:fill-box;transform-origin:center;animation:ping 4.5s ease-out infinite;opacity:0}
+@keyframes ping{0%,66%{opacity:0;transform:scale(.8)}70%{opacity:.9}100%{opacity:0;transform:scale(1.5)}}
+@media (prefers-reduced-motion:reduce){.pulse,.bob,.bob2,.press,.ping{animation:none}.press{transform:translateY(0)}}</style><polygon points="-135.1,91 0,169 0,156 -135.1,78" fill="#e3eaee"/><polygon points="135.1,91 0,169 0,156 135.1,78" fill="#d5dde2"/><polygon points="0,0 135.1,78 0,156 -135.1,78" fill="#eef3f5"/><polygon points="-63,78 0,114.4 0,46.8 -63,10.4" fill="#f5f7f9"/><polygon points="63,78 0,114.4 0,46.8 63,10.4" fill="#e6ecf0"/><polygon points="0,-26 63,10.4 0,46.8 -63,10.4" fill="#fff"/><g><g transform="matrix(22.517 13.000 0.000 -26.000 -63 65)"><path d="M0.9 1.4L0.45 0.95L0.9 0.5" fill="none" stroke="#0b0f12" stroke-width="2.2" vector-effect="non-scaling-stroke"/><path d="M1.9 1.4L2.35 0.95L1.9 0.5" fill="none" stroke="#0b0f12" stroke-width="2.2" vector-effect="non-scaling-stroke"/><line x1="1.55" y1="1.5" x2="1.25" y2="0.4" stroke="#06cbde" stroke-width="2.6" vector-effect="non-scaling-stroke"/></g></g></svg>
