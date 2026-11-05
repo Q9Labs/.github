@@ -1,4 +1,4 @@
-import re, os, shutil, sys
+import re, os, shutil, sys, json
 SITE='/Users/macmini/code/hostinger-migration/sites/q9labs.ai/assets'
 BK='/Users/macmini/code/hostinger-migration/rollback/q9labs-pages-before-2026-11-05/assets'
 CV='/Users/macmini/code/canvas/canvases/q9-website-revamp'
@@ -25,8 +25,23 @@ def old_head(name):
         ogt=g(r'<meta property="og:title" content="(.*?)"'),ogd=g(r'<meta property="og:description" content="(.*?)"'),
         ld=re.findall(r'<script type="application/ld\+json">.*?</script>',s,re.S))
 
+def lineup():
+    items=[]
+    for m in re.finditer(r'<article class="card" id="(\w+)".*?</article>',home,re.S):
+        a=m.group(0)
+        items.append((re.search(r'card__name[^>]*>(.*?)<',a).group(1),re.search(r'card__desc">(.*?)</p>',a).group(1),
+          re.search(r'<a class="link" href="([^"]*)"',a).group(1)))
+    return [(n,d,u if u.startswith('http') else 'https://q9labs.ai'+u) for n,d,u in items]
+
+def products_ld():
+    L=lineup()
+    org={"@context":"https://schema.org","@type":"Organization","name":"Q9 Labs","url":"https://q9labs.ai","logo":"https://q9labs.ai/img/q9logo.png","parentOrganization":{"@type":"Organization","name":"CollabEZ","url":"https://collabez.ae"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Product","name":n,"description":d,"url":u}} for n,d,u in L]}
+    lst={"@context":"https://schema.org","@type":"ItemList","name":"Q9 Labs products","itemListElement":[{"@type":"ListItem","position":i+1,"name":n,"description":d,"url":u} for i,(n,d,u) in enumerate(L)]}
+    return ['<script type="application/ld+json">'+json.dumps(x,ensure_ascii=False,separators=(',',':'))+'</script>' for x in (org,lst)]
+
 def head(name,url,robots=True):
     h=old_head(name)
+    if name=='products': h['ld']=products_ld()
     t=h['title']; d=h['desc']
     out=['<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">',
       '<title>%s</title><meta name="description" content="%s"/>'%(t,d),
